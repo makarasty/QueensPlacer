@@ -73,23 +73,20 @@
 				{
 					Console.ForegroundColor = ConsoleColor.Green;
 					Console.Write("♛ ");
-					Console.ResetColor();
 				}
 				else
 				{
 					if (X % 2 == Y % 2)
 					{
 						Console.ForegroundColor = ConsoleColor.Black;
-						Console.Write("▢ ");
-						Console.ResetColor();
 					}
 					else
 					{
 						Console.ForegroundColor = ConsoleColor.White;
-						Console.Write("▢ ");
-						Console.ResetColor();
 					}
+					Console.Write("▢ ");
 				}
+				Console.ResetColor();
 			}
 			Console.WriteLine();
 		}
